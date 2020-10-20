@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tomato Timer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tomato Timer</h1>
+    </header>
+    <div class="container">
+        <div class="timer">
+            <div id="hand"></div>
+            <div class="controls">
+                <label for="status-toggle" class="switch">
+                    <input checked type="checkbox" name="status-toggle" id="status-toggle" />
+                    <span class="slider"></span>
+                </label>
+                <div class="status">Status: <span id="status">Working</span></div>
+                <div class="time">
+                    <div id="minutes">25</div>
+                    <div id="seconds">00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
