@@ -73,3 +73,20 @@ label {
     transition: 0.4s;
     border-radius: 50%;
 }
+
+input:checked + .slider {
+    background-color: tomato;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px tomato;
+}
+
+input:checked + .slider:before {
+    transform: translateX(13px);
+}
+
+.container {
+    padding: 20px;
+    max-width: 400px;
+}
