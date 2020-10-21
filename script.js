@@ -114,3 +114,13 @@ function pauseTimer() {
     clearInterval(interval);
     renderTime();
 }
+
+
+
+//this function stops the interval and also resets the secondsElapsed variable
+function stopTimer() {
+    secondsElapsed = 0;
+    setTime();
+    renderTime();
+}
+
