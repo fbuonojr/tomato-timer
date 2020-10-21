@@ -141,3 +141,25 @@ function toggleStatus(event){
     setTime();
     renderTime();
 }
+
+function getTimePreferences() {
+
+    //check to see if preferences have been set in localstorage
+    var preferences = JSON.parse(localStorage.getItem("preferences"));
+
+    //if preferences have been set then use value available
+    if (preferences) {
+        if(preferences.workMinutes){
+            workMinutesInput.value = preferences.workMinutes;
+        }
+
+        if(preferences.restMinutes){
+            restMinutesInput.value = preferences.restMinutes;
+        }
+    }
+
+    //where the app is kicked off
+    setTime();
+    renderTime();
+}
+
