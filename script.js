@@ -63,9 +63,30 @@ function setTime(){
         minutes = workMinutesInput.value.trim();
     } 
     else {
-        minutes = restMinutesInput.nodeValue.trim();
+        minutes = restMinutesInput.value.trim();
     }
 
     clearInterval(interval);
     totalSeconds = minutes * 60;
 }
+
+//this function displays the time and checks to see if time has run out
+function renderTime() {
+    //sets textContent for html
+    minutesDisplay.textContent = getFormattedMinutes();
+    secondsDisplay.textContent = getFormattedSeconds();
+
+    //then checks if time has run out
+    if(secondsElapsed >= totalSeconds) {
+        if(status === "Working") {
+            alert("Time for a break!");
+        } 
+        else {
+            alert("Time to get back to work!");
+        }
+
+        stopTimer();
+    }
+}
+
+//
