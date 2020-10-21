@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: #fdfdfd;
+    font-family: "Josefin Sans", sans-serif;
+  }
