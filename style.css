@@ -6,7 +6,7 @@
 
 body {
     font-size: 14px;
-    background-color: #fdfdfd;
+    background-color: black;
     font-family: "Josefin Sans", sans-serif;
 }
 
@@ -22,12 +22,10 @@ h1 {
 
 input {
     border: 5px solid tomato;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 2em;
+    font-size: 5em;
     color: tomato;
     width: 100%;
+    background-color: #67ab09;
 }
 
 label {
@@ -55,7 +53,7 @@ label {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #67ab09;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 50%;
@@ -68,7 +66,7 @@ label {
     width: 13px;
     left: 2px;
     bottom: 2px;
-    background-color: white;
+    background-color: black;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 50%;
@@ -111,7 +109,7 @@ input:checked + .slider:before {
     left: 5px;
     height: 290px;
     width: 290px;
-    background-color: #fdfdfd;
+    background-color: black;
     border-radius: 50%
 }
 
@@ -188,7 +186,7 @@ button {
     font-size: 1.5em;
     background-color: tomato;
     border: none;
-    color: #fdfdfd;
+    color: black;
     cursor: pointer;
 }
 
