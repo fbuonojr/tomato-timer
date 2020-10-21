@@ -107,3 +107,10 @@ function startTimer(){
         alert("Minutes of work/rest must be greater than 0.")
     }
 }
+
+
+//this function stops the setInterval() in startTimer but doesn't reset secondsElapsed and doesn't reset the time
+function pauseTimer() {
+    clearInterval(interval);
+    renderTime();
+}
