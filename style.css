@@ -191,3 +191,16 @@ button {
     color: #fdfdfd;
     cursor: pointer;
 }
+
+.input-group {
+    margin-top: 20px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.inputs::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
