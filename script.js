@@ -16,14 +16,40 @@ var secondsElapsed = 0;
 var status = "Working";
 var interval;
 
-
-
 //starts application by calling setTime and renderTime()
 getTimePreferences();
 
- //these functions just format the numbers for the html elements
- function getFormattedMinutes() {
-    var secondsLeft = totalSeconds-secondsElapsed;
+//these functions just format the numbers for the html elements
+function getFormattedMinutes() {
+
+    var secondsLeft = totalSeconds - secondsElapsed;
 
     var minutesLeft = Math.floor(secondsLeft / 60);
- }
+
+    var formattedMinutes;
+
+    if (minutesLeft < 10) {
+        formattedMinutes = "0" + minutesLeft;
+    } 
+    else {
+        formattedMinutes = minutesLeft;
+    }
+
+    return formattedMinutes;
+}
+
+function getFormattedSeconds() {
+    var secondsLeft = (totalSeconds - secondsElapsed) % 60;
+
+    var formattedSeconds;
+
+    if(secondsLeft < 10) {
+        formattedSeconds = "0" + secondsLeft;
+    } 
+    else {
+        formattedSeconds = secondsLeft;
+    }
+
+    return formattedSeconds
+}
+
