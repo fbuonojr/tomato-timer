@@ -8,10 +8,42 @@ body {
     font-size: 14px;
     background-color: #fdfdfd;
     font-family: "Josefin Sans", sans-serif;
-  }
+}
 
-  header {
+header {
     text-align: center;
     color: tomato;
     font-family: "Amatic SC", cursive;
-  }
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+input {
+    border: 5px solid tomato;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2em;
+    color: tomato;
+    width: 100%;
+}
+
+label {
+    display: block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    margin-bottom: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
