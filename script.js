@@ -89,4 +89,21 @@ function renderTime() {
     }
 }
 
-//
+//this function is where the time runs: increments the secondsElapsed variable
+function startTimer(){
+    setTime();
+
+    //only start if totalSeconds > 0
+    if(totalSeconds > 0) {
+        //here, interval using setInterval begins the recurring increment of the secondsElapsed variable which is used to check if the time is up
+        interval = setInterval(function() {
+            secondsElapsed++;
+
+            //renderTime is called once every second
+            renderTime();
+        }, 1000);
+    }
+    else {
+        alert("Minutes of work/rest must be greater than 0.")
+    }
+}
