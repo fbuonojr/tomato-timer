@@ -163,3 +163,19 @@ function getTimePreferences() {
     renderTime();
 }
 
+function setTimePreferences() {
+    localStorage.setItem(
+        "preferences",
+        JSON.stringify({
+            workMinutes: workMinutesInput.value.trim(),
+            restMinutes: restMinutesInput.value.trim()
+        })
+    )
+}
+
+playButton.addEventListener("click", startTimer);
+pauseButton.addEventListener("click", pauseTimer);
+stopButton.addEventListener("click", stopTimer);
+statusToggle.addEventListener("change", toggleStatus);
+inputs.addEventListener("change", setTimePreferences);
+inputs.addEventListener("keyup", setTimePreferences);
