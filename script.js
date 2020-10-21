@@ -124,3 +124,20 @@ function stopTimer() {
     renderTime();
 }
 
+//this function specifies which of the 2 timer modes to use
+function toggleStatus(event){
+    var checked = event.target.checked;
+
+    if(checked) {
+        status = "Working";
+    }
+    else {
+        status = "Resting";
+    }
+
+    statusSpan.textContent = status;
+
+    secondsElapsed = 0;
+    setTime();
+    renderTime();
+}
