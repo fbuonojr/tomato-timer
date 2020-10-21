@@ -8,4 +8,4 @@ This application uses the aforementioned technologies to create a timer with int
 
 ![](./images/tomatotimer.PNG)
 
-###### Frank Buono
+###### Frank Buono- this app was created as practice using an activity from my bootcamp class
