@@ -9,3 +9,9 @@ body {
     background-color: #fdfdfd;
     font-family: "Josefin Sans", sans-serif;
   }
+
+  header {
+    text-align: center;
+    color: tomato;
+    font-family: "Amatic SC", cursive;
+  }
