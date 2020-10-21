@@ -53,3 +53,19 @@ function getFormattedSeconds() {
     return formattedSeconds
 }
 
+//this function retrieves the values from the html input elements, basically resets the timer
+
+
+function setTime(){
+    var minutes;
+
+    if(status === "Working") {
+        minutes = workMinutesInput.value.trim();
+    } 
+    else {
+        minutes = restMinutesInput.nodeValue.trim();
+    }
+
+    clearInterval(interval);
+    totalSeconds = minutes * 60;
+}
