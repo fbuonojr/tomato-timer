@@ -6,4 +6,6 @@ This application uses the aforementioned technologies to create a timer with int
 
 * link to deployed application: https://fbuonojr.github.io/tomato-timer/
 
+![](../tomatotimer.png)
+
 ###### Frank Buono
