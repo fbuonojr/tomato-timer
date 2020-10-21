@@ -161,3 +161,33 @@ input:checked + .slider:before {
     width: 100%;
     text-align: center;
 }
+
+.time::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+#minutes {
+    font-size: 6em;
+    float: left;
+    margin-left: 25%;
+}
+
+#seconds {
+    font-size: 4em;
+    float: left;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    background-color: tomato;
+    border: none;
+    color: #fdfdfd;
+    cursor: pointer;
+}
